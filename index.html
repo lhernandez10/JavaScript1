@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF=8">
+	<title>My Awesome First Web Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script>
+	function msgBox(mystring)
+	{
+		alert(mystring)
+	}
+	function DoProduct(mystring1,mystring2)
+	{
+		var answer = mystring1 * mystring2
+		alert(answer)
+	}
+	function GetCrazy(colorchoice) {
+			document.body.style.backgroundColor = colorchoice
+	}
+	</script>
+	</head>
+	<body>
+	<h1> Money Maker</h1>
+	<form>
+		<input name="box1" type="text"/>
+		<input name="submit" type="button" value="Show Me" onClick="msgBox(form.box1.value)"/>
+	<h1>Simple Math:</h1>
+		<form name="form2">
+		<input name="num1" type="text" size="5" /> multiply by:
+		<input name="num2" type="text" size="5" />
+		<input name="submit2" type="button" value="Multiply" onclick="DoProduct(form.num1.value, form.num2.value)"/>
+	<h1>Color Choices</h1>
+	<form name="form3">
+		<p>Make me: </p>
+		<input type="button" value="Red" onClick="GetCrazy('red')">
+		<input type="button" value="Yellow" onClick="GetCrazy('Yellow')">
+		<input type="button" value="Green" onClick="GetCrazy('Green')">
+		<input type="button" value="Blue" onClick="GetCrazy('Blue')">
+	</form>
+
+
+	</form>
+	</body>
